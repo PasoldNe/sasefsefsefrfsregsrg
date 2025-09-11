@@ -72,11 +72,26 @@
 //}
 
 
-let a = 5;
-let b = "5";
+//let a = 5;
+//let b = "5";
+//
+//if (a !== b) {
+//    console.log("Iguais");
+//} else {
+//    console.log("Diferentes");
+//}
 
-if (a !== b) {
-    console.log("Iguais");
+
+
+
+let idade = 16;
+
+if (idade < 10) {
+    console.log("Não pode transar");
+} else if (idade < 16) {
+    console.log("Pode transar com autorização dos pais");
+} else if (idade < 18) {
+    console.log("Pode transar, mas não pode beber");
 } else {
-    console.log("Diferentes");
+    console.log("Pode transar e beber");
 }
