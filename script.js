@@ -84,14 +84,21 @@
 
 
 
-let idade = 16;
+//let idade = 16;
+//
+//if (idade < 10) {
+//    console.log("Não pode transar");
+//} else if (idade < 16) {
+//    console.log("Pode transar com autorização dos pais");
+//} else if (idade < 18) {
+//    console.log("Pode transar, mas não pode beber");
+//} else {
+//    console.log("Pode transar e beber");
+//}
 
-if (idade < 10) {
-    console.log("Não pode transar");
-} else if (idade < 16) {
-    console.log("Pode transar com autorização dos pais");
-} else if (idade < 18) {
-    console.log("Pode transar, mas não pode beber");
-} else {
-    console.log("Pode transar e beber");
+
+
+
+for (let i = 1; i <= 10; i++) {
+    console.log(`transei ${i} vezes`);
 }
