@@ -63,10 +63,20 @@
 //console.log(`Endereço: ${endereco}`);
 
 
-let nota1 = 8.5;
+//let nota1 = 8.5;
+//
+//if (nota1 >= 7) {
+//    console.log("Aprovado");
+//} else {
+//    console.log("Reprovado");
+//}
 
-if (nota1 >= 7) {
-    console.log("Aprovado");
+
+let a = 5;
+let b = "5";
+
+if (a !== b) {
+    console.log("Iguais");
 } else {
-    console.log("Reprovado");
+    console.log("Diferentes");
 }
