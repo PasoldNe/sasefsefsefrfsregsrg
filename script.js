@@ -48,14 +48,25 @@
 //console.log(typeof nulo);         // object (this is a known quirk in //JavaScript)
 //console.log(typeof indefinido);   // undefined
 
-let nome = "Vitor";
-let idade = 16;
-let altura = 1.86;
-let ehEstudante = true;
-let endereco = "Pomerode, SC";
 
-console.log(`Nome: ${nome}`);
-console.log(`Idade: ${idade}`);
-console.log(`Altura: ${altura}m`);
-console.log(`É estudante? ${ehEstudante}`);
-console.log(`Endereço: ${endereco}`);
+
+//let nome = "Vitor";
+//let idade = 16;
+//let altura = 1.86;
+//let ehEstudante = true;
+//let endereco = "Pomerode, SC";
+//
+//console.log(`Nome: ${nome}`);
+//console.log(`Idade: ${idade}`);
+//console.log(`Altura: ${altura}m`);
+//console.log(`É estudante? ${ehEstudante}`);
+//console.log(`Endereço: ${endereco}`);
+
+
+let nota1 = 8.5;
+
+if (nota1 >= 7) {
+    console.log("Aprovado");
+} else {
+    console.log("Reprovado");
+}
