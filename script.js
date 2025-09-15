@@ -158,16 +158,26 @@
 //    console.log(`transei ${i} vezes`);
 //}
 
-let numero = 7;
-
-for (let i = 1; i <= 10; i++) {
-    let resultado = numero * i;
-    console.log(`${numero} x ${i} = ${resultado}`);
-}
-
-
+//let numero = 7;
+//
+//for (let i = 1; i <= 10; i++) {
+//    let resultado = numero * i;
+//    console.log(`${numero} x ${i} = ${resultado}`);
+//}
 
 
 
 
 
+
+
+
+
+
+//let soma = 0;
+//
+//for (let i = 1; i <= 10; i++) {
+//    soma += i;
+//}
+//
+//console.log(`A soma de tudo ficou em ${soma}`);
