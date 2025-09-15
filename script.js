@@ -12,6 +12,15 @@
 // console.log("É estudante? " + ehEstudante);
 // console.log("Altura: " + altura + "m");
 
+
+
+
+
+
+
+
+
+
 // console.log("Hello, World!");
 // 
 // 
@@ -36,6 +45,14 @@
 // console.log("Altura: " + altura + "m");
 
 
+
+
+
+
+
+
+
+
 //let texto = "Olá, Mundo!";
 //let numero = 42;
 //let booleano = true;
@@ -47,6 +64,14 @@
 //console.log(typeof booleano);   // boolean
 //console.log(typeof nulo);         // object (this is a known quirk in //JavaScript)
 //console.log(typeof indefinido);   // undefined
+
+
+
+
+
+
+
+
 
 
 
@@ -63,6 +88,14 @@
 //console.log(`Endereço: ${endereco}`);
 
 
+
+
+
+
+
+
+
+
 //let nota1 = 8.5;
 //
 //if (nota1 >= 7) {
@@ -70,6 +103,14 @@
 //} else {
 //    console.log("Reprovado");
 //}
+
+
+
+
+
+
+
+
 
 
 //let a = 5;
@@ -80,6 +121,13 @@
 //} else {
 //    console.log("Diferentes");
 //}
+
+
+
+
+
+
+
 
 
 
@@ -95,6 +143,13 @@
 //} else {
 //    console.log("Pode transar e beber");
 //}
+
+
+
+
+
+
+
 
 
 
