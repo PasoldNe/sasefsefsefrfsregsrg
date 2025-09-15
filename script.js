@@ -193,22 +193,24 @@
 
 
 
-function media(n1, n2) {
-    return n1 + n2;
-}
-
-let resul = media(5, 10);
-
-console.log(resul);
 
 
-
-function nomeCompleto(nome, sobrenome) {
-    return `${nome} ${sobrenome}`;
-}
-
-let nomes
-
-nomes = nomeCompleto("Vitor", "Pasold");
-
-console.log(`Meu nome é ${nomes}`);
+//function media(n1, n2) {
+//    return n1 + n2;
+//}
+//
+//let resul = media(5, 10);
+//
+//console.log(resul);
+//
+//
+//
+//function nomeCompleto(nome, sobrenome) {
+//    return `${nome} ${sobrenome}`;
+//}
+//
+//let nomes
+//
+//nomes = nomeCompleto("Vitor", "Pasold");
+//
+//console.log(`Meu nome é ${nomes}`);
