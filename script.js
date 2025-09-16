@@ -214,3 +214,71 @@
 //nomes = nomeCompleto("Vitor", "Pasold");
 //
 //console.log(`Meu nome é ${nomes}`);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function tabuada(a, b) {
+    let resultado1;
+    let resultado2;
+
+    for (let i = 1; i <= 10; i++) {
+        let resultado = a * i;
+        return resultado1 =resultado;
+    }
+
+    console.log("--------------");
+    
+    for (let i = 1; i <= 10; i++) {
+        return resultado2 =b * i;
+    }
+}
+
+
+function soma(a, b) {
+    a = prompt("Digite o primeiro número para somar:");
+    b = prompt("Digite o segundo número para somar:");
+    return a + b;
+}
+
+let resultadoGeral;
+
+let qual = prompt("Você quer ver a tabuada (t) ou somar dois números (s)?");
+
+num1 = prompt("Digite o primeiro número:");
+num2 = prompt("Digite o segundo número:");
+
+if (qual === "t") {
+    resultadoGeral = tabuada(num1, num2);
+} else if (qual === "s") {
+    resultadoGeral = soma(num1, num2);
+}
+
+console.log(resultadoGeral);
+
+
+
+//let num1 = prompt("Digite o primeiro número:");
+//let num2 = prompt("Digite o segundo número:");
+//
+//for (let i = 1; i <= 10; i++) {
+//    let resultado = num1 * i;
+//    console.log(`${num1} x ${i} = ${resultado}`);
+//}
+//
+//console.log("--------------");
+// 
+//for (let i = 1; i <= 10; i++) {
+//    let resultado = num2 * i;
+//    console.log(`${num2} x ${i} = ${resultado}`);
+//}
