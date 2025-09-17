@@ -1,17 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            background-color: rgb(136, 170, 182);
-        }
-    </style>
+    <title>Calculadora Completa</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to My Page</h1>
+    <div class="calculator">
+        <h1>Calculadora 4 Operações</h1>
+        
+        <div class="input-group">
+            <input type="number" id="numero1" placeholder="Primeiro número">
+            <input type="number" id="numero2" placeholder="Segundo número">
+        </div>
+
+        <div class="botoes">
+            <button onclick="calcular('somar')">+</button>
+            <button onclick="calcular('subtrair')">-</button>
+            <button onclick="calcular('multiplicar')">×</button>
+            <button onclick="calcular('dividir')">÷</button>
+            <button onclick="limpar()">C</button>
+        </div>
+
+        <div id="resultado" class="resultado"></div>
+    </div>
 
     <script src="script.js"></script>
 </body>

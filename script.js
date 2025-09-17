@@ -222,45 +222,50 @@
 
 
 
-        //iniciando as funcoes
-const tabuada = (a, b) => {
-    let resultado1;
-    let resultado2;
-
-    for (let i = 1; i <= 10; i++) {
-        resultado1 = a * i;
-        console.log(`${a} x ${i} = ${resultado1}`);
-    }
-
-    console.log("--------------");
+// Funções da calculadora
+function calcular(operacao) {
+    const num1 = parseFloat(document.getElementById('numero1').value);
+    const num2 = parseFloat(document.getElementById('numero2').value);
+    const resultadoDiv = document.getElementById('resultado');
     
-    for (let j = 1; j <= 10; j++) {
-        resultado2 = b * j;
-        console.log(`${b} x ${j} = ${resultado2}`);
-    }
-}  
-
-const soma = (a, b) => {
-    a = Number(a);
-    b = Number(b);
-    return a + b;
+    if (isNaN(num1) || isNaN(num2)) {
+        resultadoDiv.innerHTML = "Por favor, insira dois números válidos!";
+        resultadoDiv.style.color = "#dc3545";
+        return;
     }
 
-        //inciando o codigo visivel
+    let resultado;
+    switch(operacao) {
+        case 'somar':
+            resultado = num1 + num2;
+            break;
+        case 'subtrair':
+            resultado = num1 - num2;
+            break;
+        case 'multiplicar':
+            resultado = num1 * num2;
+            break;
+        case 'dividir':
+            if (num2 === 0) {
+                resultadoDiv.innerHTML = "Erro: Divisão por zero!";
+                resultadoDiv.style.color = "#dc3545";
+                return;
+            }
+            resultado = num1 / num2;
+            break;
+        default:
+            resultado = "Operação inválida";
+    }
 
-let resultadoGeral;
-
-let qual = prompt("Você quer ver a tabuada (t) ou somar dois números (s)?");
-
-num1 = prompt("Digite o primeiro número:");
-num2 = prompt("Digite o segundo número:");
-
-if (qual === "t") {
-    resultadoGeral = tabuada(num1, num2);
-} else if (qual === "s") {
-    resultadoGeral = soma(num1, num2);
+    resultadoDiv.innerHTML = `Resultado: ${typeof resultado === 'number' ? resultado.toFixed(2) : resultado}`;
+    resultadoDiv.style.color = "#28a745";
 }
 
+function limpar() {
+    document.getElementById('numero1').value = '';
+    document.getElementById('numero2').value = '';
+    document.getElementById('resultado').innerHTML = '';
+}
 
 
 
