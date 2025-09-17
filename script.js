@@ -233,21 +233,22 @@ function tabuada(a, b) {
     let resultado2;
 
     for (let i = 1; i <= 10; i++) {
-        let resultado = a * i;
-        return resultado1 =resultado;
+        resultado1 = a * i;
+        console.log(`${a} x ${i} = ${resultado1}`);
     }
 
     console.log("--------------");
     
-    for (let i = 1; i <= 10; i++) {
-        return resultado2 =b * i;
+    for (let j = 1; j <= 10; j++) {
+        resultado2 = b * j;
+        console.log(`${b} x ${j} = ${resultado2}`);
     }
 }
 
 
 function soma(a, b) {
-    a = prompt("Digite o primeiro número para somar:");
-    b = prompt("Digite o segundo número para somar:");
+    a = Number(a);
+    b = Number(b);
     return a + b;
 }
 
