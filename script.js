@@ -225,7 +225,18 @@
 
 
 
+let resultadoGeral;
 
+let qual = prompt("Você quer ver a tabuada (t) ou somar dois números (s)?");
+
+num1 = prompt("Digite o primeiro número:");
+num2 = prompt("Digite o segundo número:");
+
+if (qual === "t") {
+    resultadoGeral = tabuada(num1, num2);
+} else if (qual === "s") {
+    resultadoGeral = soma(num1, num2);
+}
 
 
 function tabuada(a, b) {
@@ -252,18 +263,6 @@ function soma(a, b) {
     return a + b;
 }
 
-let resultadoGeral;
-
-let qual = prompt("Você quer ver a tabuada (t) ou somar dois números (s)?");
-
-num1 = prompt("Digite o primeiro número:");
-num2 = prompt("Digite o segundo número:");
-
-if (qual === "t") {
-    resultadoGeral = tabuada(num1, num2);
-} else if (qual === "s") {
-    resultadoGeral = soma(num1, num2);
-}
 
 console.log(resultadoGeral);
 
