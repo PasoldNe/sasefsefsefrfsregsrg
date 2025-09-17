@@ -222,8 +222,31 @@
 
 
 
+        //iniciando as funcoes
+const tabuada = (a, b) => {
+    let resultado1;
+    let resultado2;
 
+    for (let i = 1; i <= 10; i++) {
+        resultado1 = a * i;
+        console.log(`${a} x ${i} = ${resultado1}`);
+    }
 
+    console.log("--------------");
+    
+    for (let j = 1; j <= 10; j++) {
+        resultado2 = b * j;
+        console.log(`${b} x ${j} = ${resultado2}`);
+    }
+}  
+
+const soma = (a, b) => {
+        a = Number(a);
+        b = Number(b);
+        return a + b;
+    }
+
+        //inciando o codigo visivel
 
 let resultadoGeral;
 
@@ -239,29 +262,38 @@ if (qual === "t") {
 }
 
 
-function tabuada(a, b) {
-    let resultado1;
-    let resultado2;
-
-    for (let i = 1; i <= 10; i++) {
-        resultado1 = a * i;
-        console.log(`${a} x ${i} = ${resultado1}`);
-    }
-
-    console.log("--------------");
-    
-    for (let j = 1; j <= 10; j++) {
-        resultado2 = b * j;
-        console.log(`${b} x ${j} = ${resultado2}`);
-    }
-}
 
 
-function soma(a, b) {
-    a = Number(a);
-    b = Number(b);
-    return a + b;
-}
+
+
+
+        //funcoes antigas
+        //so tirar as barras e volta a funcionar
+
+
+//function tabuada(a, b) {
+//    let resultado1;
+//    let resultado2;
+//
+//    for (let i = 1; i <= 10; i++) {
+//        resultado1 = a * i;
+//        console.log(`${a} x ${i} = ${resultado1}`);
+//    }
+//
+//    console.log("--------------");
+//    
+//    for (let j = 1; j <= 10; j++) {
+//        resultado2 = b * j;
+//        console.log(`${b} x ${j} = ${resultado2}`);
+//    }
+//}
+//
+//
+//function soma(a, b) {
+//    a = Number(a);
+//    b = Number(b);
+//    return a + b;
+//}
 
 
 console.log(resultadoGeral);
