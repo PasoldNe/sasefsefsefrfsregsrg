@@ -241,9 +241,9 @@ const tabuada = (a, b) => {
 }  
 
 const soma = (a, b) => {
-        a = Number(a);
-        b = Number(b);
-        return a + b;
+    a = Number(a);
+    b = Number(b);
+    return a + b;
     }
 
         //inciando o codigo visivel
