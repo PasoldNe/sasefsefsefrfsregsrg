@@ -1,0 +1,113 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 20px;
+}
+
+.calculator {
+    background: rgba(255, 255, 255, 0.98);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s ease;
+}
+
+.calculator:hover {
+    transform: translateY(-5px);
+}
+
+h1 {
+    color: #2d3748;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.input-group {
+    margin-bottom: 2rem;
+    display: grid;
+    gap: 1.2rem;
+}
+
+input {
+    padding: 1rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+button {
+    padding: 1.2rem;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background: #4a5568;
+    color: white;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+button:hover {
+    background: #2d3748;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:nth-child(4n) {
+    background: #667eea;
+}
+
+button:nth-child(4n):hover {
+    background: #5a67d8;
+}
+
+button:last-child {
+    background: #e53e3e;
+    grid-column: span 4;
+    margin-top: 1rem;
+}
+
+button:last-child:hover {
+    background: #c53030;
+}
+
+.resultado {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: #f7fafc;
+    border-radius: 12px;
+    min-height: 60px;
+    font-size: 1.3rem;
+    color: #2d3748;
+    text-align: center;
+    word-wrap: break-word;
+    border: 2px solid #e2e8f0;
+    transition: opacity 0.3s ease;
+}
